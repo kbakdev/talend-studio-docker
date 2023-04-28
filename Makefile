@@ -8,4 +8,5 @@ build:
 
 run:
 	@echo "Setting DISPLAY"
-	- docker run -it --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix talend-studio
+	- docker run -it --rm -e DISPLAY=$(DISPLAY) -v /tmp/.X11-unix:/tmp/.X11-unix talend-studio
+
