@@ -24,7 +24,7 @@ make build
 To run the Docker container, execute the following command:
 
 ```bash
-docker run -it --rm talend-studio-docker:latest
+docker run -it --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix talend-studio-docker:latest
 ```
 
 Alternatively, if you have GNU Make installed, you can use the Makefile:
